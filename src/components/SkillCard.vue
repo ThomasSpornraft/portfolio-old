@@ -1,35 +1,27 @@
 <template>
-  <div class="skillcard">
+  <div v-for="card in cards" :key="card.id" class="skillcard">
     <div class="skillcard__head">
       <div class="scillcard__head-logo">
-        <img :src="cards[0].img_url" :alt="cards[0].img_alt" />
+        <img :src="require(`@/${card.img_url}`)" :alt="card.img_alt" />
       </div>
       <div class="scillcard__head-title">
-        <h2>{{ cards[0].title }}</h2>
+        <h2>{{ card.title }}</h2>
       </div>
     </div>
     <div class="skillcard__body">
       <div class="skillcard__body-item">
         <details>
-          <summary>über {{ cards[0].description }}</summary>
-          {{ cards[0].descriptionDetails }}
+          <summary>über {{ card.description }}</summary>
+          {{ card.descriptionDetails }}
         </details>
       </div>
       <div class="skillcard__body-item">
         <details open>
           <summary>Selbstbewertung</summary>
-          <div class="score">
+          <div v-for="(key, value) in card.scores" :key="key" class="score">
             <div class="score__container">
-              <p>Total</p>
-              <progress value="20" max="100"></progress>
-            </div>
-            <div class="score__container">
-              <p>Total</p>
-              <progress value="20" max="100"></progress>
-            </div>
-            <div class="score__container">
-              <p>Total</p>
-              <progress value="20" max="100"></progress>
+              <p>{{ value }}</p>
+              <progress :value="key" max="100"></progress>
             </div>
           </div>
         </details>
@@ -83,11 +75,15 @@ export default {
         {
           id: 1,
           title: "HTML",
+
           scores: {
             Total: 85,
+            Forms: 70,
+            Buttons: 60,
           },
-          img_url: "../assets/img/aws.svg",
-          img_alt: "aws logo",
+
+          img_url: "assets/img/html.svg",
+          img_alt: "HTML logo",
           description: "HTML",
           descriptionDetails:
             "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus alias aliquid consequuntur delectus eius accusamus quasi a omnis velit, repellendus mollitia sit, explicabo voluptate. Molestias molestiae animi eos harum assumenda, nihil cumque consequuntur impedit dolorum illum, blanditiis, magni consectetur! Corporis quam mollitia recusandae, pariatur asperiores exercitationem modi doloribus nulla",
@@ -105,8 +101,9 @@ export default {
             nodeJs: 15,
             expressJS: 25,
           },
-          img_url: "../assets/img/aws.svg",
-          description: "Python",
+          img_url: "assets/img/javascript.svg",
+          img_alt: "JavaScript Logo",
+          description: "JavaScript",
           descriptionDetails:
             "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus alias aliquid consequuntur delectus eius accusamus quasi a omnis velit, repellendus mollitia sit, explicabo voluptate. Molestias molestiae animi eos harum assumenda, nihil cumque consequuntur impedit dolorum illum, blanditiis, magni consectetur! Corporis quam mollitia recusandae, pariatur asperiores exercitationem modi doloribus nulla",
         },
@@ -184,7 +181,7 @@ export default {
 .score {
   align-items: center;
   flex-direction: column;
-  padding: 10px 20px 10px 20px;
+  padding: 2px 20px 2px 20px;
 }
 .score p {
   font-size: 0.8rem;

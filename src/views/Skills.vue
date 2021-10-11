@@ -7,9 +7,6 @@
     </p>
     <div class="skills__main">
       <skill-card></skill-card>
-      <skill-card></skill-card>
-      <skill-card></skill-card>
-      <skill-card></skill-card>
     </div>
   </div>
 </template>
