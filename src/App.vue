@@ -13,6 +13,11 @@ export default {
 </script>
 
 <style>
+/* imports START */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+/* imports END */
+
 * {
   padding: 0;
   margin: 0;
@@ -20,9 +25,7 @@ export default {
 }
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Ubuntu", sans-serif;
   text-align: center;
   color: #2c3e50;
 }

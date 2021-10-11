@@ -4,13 +4,27 @@
       <div class="header__logo-img">
         <img src="../assets/profil.png" alt="" />
       </div>
+      <div class="header__logo-name">
+        <p>Thomas</p>
+        <p>Spornraft</p>
+        <p>age: 39 | male</p>
+      </div>
     </div>
-    <div id="nav">
+    <div class="header__navbar-mobile">
+      <i class="fas fa-bars"></i>
+    </div>
+    <div class="header__navbar-desktop">
       <router-link to="/">Home</router-link>
       <router-link to="/ausbildung">Ausbildung</router-link>
       <router-link to="/erfahrung">Erfahrung</router-link>
       <router-link to="/skills">Skills</router-link>
       <router-link to="/sonstiges">Sonstiges</router-link>
+    </div>
+    <div class="header__settings">
+      <div class="header__settings-design"><i class="fas fa-sun"></i></div>
+      <div class="header__settings-language">
+        <p>Englisch</p>
+      </div>
     </div>
   </div>
 </template>
@@ -21,8 +35,62 @@ export default {};
 
 <style scoped>
 .header {
+  padding: 5px 1rem;
   background-color: black;
   display: flex;
   justify-content: space-between;
+}
+
+.header__logo {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+.header__logo-img img {
+  border: 4px solid rebeccapurple;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+
+.header__logo-name {
+  color: white;
+  text-align: left;
+}
+
+.header__navbar-mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.header__navbar-mobile i {
+  font-size: 32px;
+  color: white;
+}
+
+.header__navbar-desktop {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.header__navbar-desktop a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.header__settings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  color: white;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
 }
 </style>
