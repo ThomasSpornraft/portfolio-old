@@ -1,0 +1,249 @@
+<template>
+  <div class="skillcard">
+    <div class="skillcard__head">
+      <div class="scillcard__head-logo">
+        <img :src="cards[0].img_url" :alt="cards[0].img_alt" />
+      </div>
+      <div class="scillcard__head-title">
+        <h2>{{ cards[0].title }}</h2>
+      </div>
+    </div>
+    <div class="skillcard__body">
+      <div class="skillcard__body-item">
+        <details>
+          <summary>über {{ cards[0].description }}</summary>
+          {{ cards[0].descriptionDetails }}
+        </details>
+      </div>
+      <div class="skillcard__body-item">
+        <details open>
+          <summary>Selbstbewertung</summary>
+          <div class="score">
+            <div class="score__container">
+              <p>Total</p>
+              <progress value="20" max="100"></progress>
+            </div>
+            <div class="score__container">
+              <p>Total</p>
+              <progress value="20" max="100"></progress>
+            </div>
+            <div class="score__container">
+              <p>Total</p>
+              <progress value="20" max="100"></progress>
+            </div>
+          </div>
+        </details>
+      </div>
+      <div class="skillcard__body-item">
+        <details>
+          <summary>Kurse</summary>
+          <div class="kurs">
+            <p>Lorem ipsum dolor, sit amet</p>
+            <img class="udemy" src="../assets/udemy.png" alt="" />
+            <p class="kurs-prozent">100%</p>
+            <i class="fas fa-check-circle green"></i>
+          </div>
+          <div class="kurs">
+            <p>Lorem ipsum dolor</p>
+            <img class="udemy" src="../assets/udemy.png" alt="" />
+            <p class="kurs-prozent gelb">75%</p>
+            <i class="fas fa-minus-circle gelb"></i>
+          </div>
+          <div class="kurs">
+            <p>Lorem ipsum dolor, sit amet</p>
+            <img class="udemy" src="../assets/udemy.png" alt="" />
+            <p class="kurs-prozent rot">33%</p>
+            <i class="fas fa-times-circle rot"></i>
+          </div>
+        </details>
+      </div>
+      <div class="skillcard__body-item">
+        <details>
+          <summary>Projekte</summary>
+          <div class="projekt">
+            <p>noch keins</p>
+          </div>
+          <div class="projekt">
+            <p>sehr kleines Projekt</p>
+          </div>
+          <div class="projekt">
+            <p>mittleres Projekt</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      cards: [
+        {
+          id: 1,
+          title: "HTML",
+          scores: {
+            Total: 85,
+          },
+          img_url: "../assets/img/aws.svg",
+          img_alt: "aws logo",
+          description: "HTML",
+          descriptionDetails:
+            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus alias aliquid consequuntur delectus eius accusamus quasi a omnis velit, repellendus mollitia sit, explicabo voluptate. Molestias molestiae animi eos harum assumenda, nihil cumque consequuntur impedit dolorum illum, blanditiis, magni consectetur! Corporis quam mollitia recusandae, pariatur asperiores exercitationem modi doloribus nulla",
+        },
+        {
+          id: 2,
+          title: "JavaScript",
+          scores: {
+            Total: 75,
+            VUE: 80,
+            React: 60,
+            Angular: 60,
+            fetch: 50,
+            axios: 30,
+            nodeJs: 15,
+            expressJS: 25,
+          },
+          img_url: "../assets/img/aws.svg",
+          description: "Python",
+          descriptionDetails:
+            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus alias aliquid consequuntur delectus eius accusamus quasi a omnis velit, repellendus mollitia sit, explicabo voluptate. Molestias molestiae animi eos harum assumenda, nihil cumque consequuntur impedit dolorum illum, blanditiis, magni consectetur! Corporis quam mollitia recusandae, pariatur asperiores exercitationem modi doloribus nulla",
+        },
+      ],
+    };
+  },
+};
+</script>
+
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+.skillcard {
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  width: 300px;
+  color: #aaa;
+  background-color: #444;
+  text-align: left;
+  font-family: "Open Sans";
+  border-radius: 10px;
+  box-shadow: -2px -2px 12px rgba(0, 0, 0, 0.2), 2px 4px 2px rgba(0, 0, 0, 0.2);
+}
+.skillcard__head {
+  display: flex;
+  color: white;
+  background-color: #333;
+  height: 70px;
+  padding: 15px;
+  border-radius: 10px 10px 0 0;
+}
+.skillcard__head-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  height: 10%;
+}
+.scillcard__head-logo > img {
+  width: 100%;
+  height: 100%;
+}
+.scillcard__head-title {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  padding-left: 15px;
+}
+.skillcard__body-item {
+  padding: 0px 15px;
+}
+.skillcard__body-item:not(.skillcard__body-item:last-child) {
+  border-bottom: 1px solid #555;
+}
+.skillcard__body-item summary {
+  font-size: 1rem;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+.skillcard__body-item details {
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+.skillcard__body-item summary:hover {
+  cursor: pointer;
+}
+.score {
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 20px 10px 20px;
+}
+.score p {
+  font-size: 0.8rem;
+}
+.score__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0.8;
+}
+.score__container:hover {
+  opacity: 1;
+}
+.kurs {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.kurs i {
+  font-size: 12px;
+}
+.kurs i.green {
+  color: lightgreen;
+}
+.kurs i.gelb {
+  color: #e0c989;
+}
+.kurs i.rot {
+  color: #f27783;
+}
+.udemy {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.kurs-prozent {
+  display: flex;
+  line-height: 12px;
+  background-color: lightgreen;
+  color: black;
+  font-size: 0.6rem;
+  height: 12px;
+  padding: 0px 5px;
+  border-radius: 10px;
+}
+.kurs-prozent.gelb {
+  background-color: #e0c989;
+}
+.kurs-prozent.rot {
+  background-color: #f27783;
+}
+.projekt {
+  display: inline-block;
+  margin: 4px;
+}
+.projekt p {
+  display: inline;
+  background-color: #222;
+  padding: 3px 10px;
+  border-radius: 30px;
+}
+</style>
