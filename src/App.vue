@@ -1,6 +1,5 @@
 <template>
   <Header></Header>
-
   <router-view />
 </template>
 
@@ -27,19 +26,13 @@ export default {
 #app {
   font-family: "Ubuntu", sans-serif;
   text-align: center;
-  color: #2c3e50;
+  color: whitesmoke;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #333;
 }
 
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+#app > div {
+  margin: 0 auto;
 }
 </style>

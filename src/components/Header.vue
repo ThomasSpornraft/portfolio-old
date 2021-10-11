@@ -75,13 +75,22 @@ export default {};
 .header__navbar-desktop {
   display: flex;
   align-items: center;
-  gap: 0.8rem;
+  gap: 0.9rem;
 }
 
 .header__navbar-desktop a {
   text-decoration: none;
   font-size: 1.5rem;
   color: white;
+  padding: 16px 0;
+}
+
+a.router-link-active {
+  border-bottom: 2px solid red;
+}
+
+.header__navbar-desktop a:hover {
+  color: red;
 }
 
 .header__settings {

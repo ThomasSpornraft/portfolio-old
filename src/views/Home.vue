@@ -4,6 +4,8 @@
   </div>
 </template>
 
+
+
 <script>
 // @ is an alias to /src
 
@@ -12,3 +14,10 @@ export default {
   components: {},
 };
 </script>
+
+
+<style>
+.home {
+  width: 70%;
+}
+</style>
