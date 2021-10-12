@@ -1,9 +1,12 @@
 <template>
   <div class="content" v-for="item in items" :key="item.id">
     <div class="content__img">
-      <img :src="item.image" :alt="item.image_alt" />
+      <!--  <img :src="item.image" :alt="item.image_alt" /> -->
     </div>
-    <div class="bullet"></div>
+    <div class="bullet">
+      <i v-if="item.Abschluss" class="fas fa-graduation-cap"></i>
+      <i v-else class="far fa-check"></i>
+    </div>
     <div class="date">
       <p>{{ item.start }}</p>
       <p>{{ item.end }}</p>
@@ -83,14 +86,14 @@ export default {
 .content {
   display: flex;
   align-items: center;
-  color: white;
+  color: #aaa;
   min-height: 100px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   width: 100%;
   position: relative;
-  box-shadow: -6px -8px 8px rgba(0, 0, 0, 0.2), 6px 8px 8px rgba(0, 0, 0, 0.2);
-
-  background-color: #111;
+  box-shadow: -2px -2px 12px rgba(0, 0, 0, 0.2), 2px 4px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: #444;
 }
 
 .content__img img {
@@ -98,11 +101,22 @@ export default {
 }
 
 .bullet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
-  width: 7%;
-  height: 6px;
-  background-color: white;
+  left: -20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid white;
+  background-color: #222;
 }
+
+.bullet i {
+  font-size: 20px;
+}
+
 .date {
   display: flex;
   flex-direction: column;
