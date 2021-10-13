@@ -185,6 +185,7 @@ body {
 }
 
 .home__content-contact img {
+  margin-top: 10px;
   border: 5px solid lightseagreen;
   padding: 5px;
   width: 200px;
@@ -226,9 +227,7 @@ body {
 
 .home__content-contact-list ul li i {
   font-size: 32px;
-
   cursor: pointer;
-
   padding: 7px;
 }
 
