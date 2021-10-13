@@ -134,6 +134,8 @@ export default {
 
 <style>
 .home {
+  display: flex;
+  justify-content: center;
   margin-top: 100px !important;
   width: 70%;
 }
@@ -153,14 +155,14 @@ body {
   align-items: center;
   width: 100vw;
   height: 100vh;
-  background-color: #222;
+  background-color: #122;
   gap: 20px;
   font-family: "Montserrat";
 }
 
 .home__content {
   display: flex;
-  gap: 15px;
+  gap: 25px;
 }
 
 .home__content-contact {
@@ -171,6 +173,8 @@ body {
   height: 640px;
   width: 300px;
   border-radius: 10px;
+  background-color: rgba(12, 12, 12, 0.7);
+  border: 1px solid lightseagreen;
   box-shadow: -2px -2px 12px rgba(0, 0, 0, 0.4), 2px 4px 2px rgba(0, 0, 0, 0.4);
 }
 
@@ -224,6 +228,8 @@ body {
   color: white;
   text-align: center;
   padding: 20px 30px;
+  background-color: rgba(12, 12, 12, 0.7);
+  border: 1px solid lightseagreen;
 }
 
 .home__content-main h1 {

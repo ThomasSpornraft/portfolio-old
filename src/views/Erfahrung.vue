@@ -26,12 +26,12 @@ export default {
 p.erfahrung__text {
   color: white;
   width: 50%;
-  margin: 25px 0;
+  margin: 45px 0;
   font-size: 1.3rem;
 }
 .erfahrung__content {
   display: flex;
-
+  margin-top: 10px;
   max-width: 1000px;
   height: 100%;
   justify-content: space-evenly;

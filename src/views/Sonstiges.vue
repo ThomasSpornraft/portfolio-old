@@ -45,10 +45,11 @@
   justify-content: center;
   align-items: center;
   gap: 3rem;
-  padding: 40px 60px;
-  background-color: #111;
-  height: 50%;
+  padding: 0px 100px;
+  background-color: rgba(12, 12, 12, 0.7);
+  height: 550px;
   border-radius: 10px;
+  border: 1px solid lightseagreen;
   box-shadow: -2px -2px 12px rgba(0, 0, 0, 0.6), 2px 4px 4px rgba(0, 0, 0, 0.6);
 }
 

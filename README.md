@@ -33,3 +33,5 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ### git add dist
 
 ### git subtree push --prefix dist origin gh-pages
+
+### https://vue-particles.netlify.app/?ref=madewithvuejs.com

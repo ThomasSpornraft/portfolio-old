@@ -30,18 +30,12 @@ export default {
           start: "17.11.1981",
           end: "31.08.1988",
           Beschreibung: "Geburt",
-          image:
-            "https://cdn.pixabay.com/photo/2016/04/12/13/18/stork-1324371_960_720.png",
-          image_alt: "Stork wirth baby",
         },
         {
           id: 2,
           start: "01.09.1988",
           end: "31.08.1992",
           Beschreibung: "Besuch der Grundschule in Pfaffenhofen",
-          image:
-            "https://images.unsplash.com/photo-1597742200001-778e51937acc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1974&q=80",
-          image_alt: "pic for Elementary School",
         },
         {
           id: 3,
@@ -59,11 +53,6 @@ export default {
           start: "01.09.1998",
           end: "01.07.2001",
           Beschreibung: "Ausbildung zum Werkzeugmechaniker bei der BMW AG ",
-          image: "https://www.7-forum.com/news/2006/bmw_azubis_p0012523-b.jpg",
-          image2:
-            "https://images.unsplash.com/photo-1530191601183-4de2969575ad?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80",
-          image_source:
-            "https://www.7-forum.com/bild.php?bild=news/2006/bmw_azubis_p0012523-b.jpg&title=Auszubildende%20bei%20der%20BMW%20Group&cpy=bmw&rel=1&ort=&ref=http://www.7-forum.com/news/BMW-Berufsausbildung-Open-1189.html&p=",
           Abschluss: true,
         },
         {
@@ -71,8 +60,6 @@ export default {
           end: "01.05.2006",
           Beschreibung:
             "nebenberufliche Fortbildung zum staatlich geprüften Techniker für Maschinenbau am DAA-Technikum",
-          image:
-            "https://cdn.pixabay.com/photo/2018/04/16/11/32/technical-drawing-3324368_960_720.jpg",
 
           Abschluss: true,
         },
@@ -88,16 +75,13 @@ export default {
   align-items: center;
   color: #aaa;
   min-height: 100px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   width: 100%;
   position: relative;
   box-shadow: -2px -2px 12px rgba(0, 0, 0, 0.2), 2px 4px 2px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  background-color: #444;
-}
-
-.content__img img {
-  width: 200px !important;
+  background-color: rgba(12, 12, 12, 0.7);
+  border: 1px solid lightseagreen;
 }
 
 .bullet {
@@ -109,8 +93,8 @@ export default {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 1px solid white;
-  background-color: #222;
+  border: 1px solid lightseagreen;
+  background-color: rgba(12, 12, 12, 0.7);
 }
 
 .bullet i {
@@ -122,7 +106,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Ubuntu", Courier, monospace;
   width: 30%;
   font-size: 1.3em;
 }

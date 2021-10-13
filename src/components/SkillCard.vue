@@ -107,6 +107,44 @@ export default {
           descriptionDetails:
             "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus alias aliquid consequuntur delectus eius accusamus quasi a omnis velit, repellendus mollitia sit, explicabo voluptate. Molestias molestiae animi eos harum assumenda, nihil cumque consequuntur impedit dolorum illum, blanditiis, magni consectetur! Corporis quam mollitia recusandae, pariatur asperiores exercitationem modi doloribus nulla",
         },
+        {
+          id: 3,
+          title: "Excel",
+          scores: {
+            Total: 85,
+            Tabellen: 80,
+            Formeln: 80,
+            Funktionen: 70,
+            "Pivot Tabellen": 60,
+            "Power Query": 70,
+            VBA: 35,
+            Diagramme: 45,
+          },
+          img_url: "assets/img/excel.svg",
+          img_alt: "Excel Logo",
+          description: "Microsoft Excel",
+          descriptionDetails:
+            "Microsoft Excel ist das am weitesten verbreitete Tabellenkalkulationsprogramm. Excel gehört zum Microsoft-Office-365-Abonnement und ist in der Desktop-Version für Windows und macOS, sowie in der mobilen Version als App für Android und iOS verfügbar.",
+        },
+        {
+          id: 4,
+          title: "Power BI",
+          scores: {
+            Total: 75,
+            Imports: 70,
+            Datenmodell: 50,
+            Funktionen: 70,
+            Visuals: 60,
+            "Power Query": 70,
+            DAX: 45,
+            "M-Language": 25,
+          },
+          img_url: "assets/img/powerbi.svg",
+          img_alt: "Power BI Logo",
+          description: "Power BI",
+          descriptionDetails:
+            "Power BI ist ein Geschäftsanalysedienst von Microsoft. Ziel ist es, interaktive Visualisierungen und Business-Intelligence-Funktionen mit einer Oberfläche bereitzustellen, die so einfach ist, dass Endbenutzer ihre eigenen Berichte und Dashboards erstellen können.",
+        },
       ],
     };
   },
@@ -122,23 +160,27 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+
 .skillcard {
   display: flex;
   flex-direction: column;
   height: max-content;
   width: 300px;
-  color: #aaa;
-  background-color: #444;
+  color: #abc;
+
   text-align: left;
-  font-family: "Open Sans";
+  font-family: "Ubuntu";
   border-radius: 10px;
+  background-color: rgba(12, 12, 12, 0.7);
+  border: 1px solid lightseagreen;
   box-shadow: -2px -2px 12px rgba(0, 0, 0, 0.2), 2px 4px 2px rgba(0, 0, 0, 0.2);
 }
 .skillcard__head {
   display: flex;
   color: white;
-  background-color: #333;
+  /* macht den Head noch etwas dunkler */
+  background-color: rgba(12, 12, 12, 0.7);
+  border-bottom: 1px solid black;
   height: 70px;
   padding: 15px;
   border-radius: 10px 10px 0 0;

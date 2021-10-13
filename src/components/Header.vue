@@ -33,10 +33,12 @@ export default {};
 
 <style scoped>
 .header {
-  padding: 5px 1rem;
+  padding: 10px 20px;
   background-color: black;
   display: flex;
   justify-content: space-between;
+  align-items: center !important;
+  height: 65px;
 }
 
 .header__logo {

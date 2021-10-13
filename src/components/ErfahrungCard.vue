@@ -41,32 +41,35 @@ export default {
           id: 2,
           start: "2005",
           end: "2008",
-          title: "",
-          Beschreibung: "Beschreibung 1",
+          title: "BMW Motorenbau",
+          subtitle: "Prototypen, Sondermotoren und Formel 1",
+          Beschreibung: "",
           image: "assets/img/BMW.svg",
         },
         {
           id: 3,
           start: "2008",
           end: "2009",
-          title: "",
-          Beschreibung: "Beschreibung 1",
+          title: "BMW Motorenbau",
+          subtitle: "Prototypen, Sondermotoren und Formel 1",
           image: "assets/img/BMW.svg",
         },
         {
           id: 4,
           start: "2009",
           end: "2011",
-          title: "",
-          Beschreibung: "Beschreibung 1",
+          title: "BMW Motorenbau",
+          subtitle: "Technologieentwicklung Antrieb",
+          Beschreibung: "",
           image: "assets/img/BMW.svg",
         },
         {
           id: 5,
           start: "2011",
           end: "-",
-          title: "",
-          Beschreibung: "Beschreibung 1",
+          title: "BMW Einkauf",
+          subtitle: "Getriebe und Schaltungen",
+          Beschreibung: "",
           image: "assets/img/BMW.svg",
         },
       ],
@@ -79,14 +82,16 @@ export default {
 .content {
   display: flex;
   align-items: center;
-  color: #aaa;
+  color: #abc;
   min-height: 100px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   width: 100%;
   position: relative;
   box-shadow: -2px -2px 12px rgba(0, 0, 0, 0.2), 2px 4px 2px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  background-color: #444;
+  padding: 20px;
+  background-color: rgba(12, 12, 12, 0.7);
+  border: 1px solid lightseagreen;
 }
 
 .bullet {
@@ -94,12 +99,12 @@ export default {
   justify-content: center;
   align-items: center;
   position: absolute;
-  left: -20px;
-  width: 40px;
-  height: 40px;
+  left: -25px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
-  /* border: 1px solid white; */
-  background-color: #222;
+  border: 1px solid lightseagreen;
+  background-color: rgba(12, 12, 12, 0.7);
 }
 
 .bullet img {
@@ -112,7 +117,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: "Courier New", Courier, monospace;
+
   width: 15%;
   font-size: 1.3em;
 }
