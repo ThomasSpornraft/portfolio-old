@@ -212,10 +212,10 @@ body {
 
 .home__content-contact-list ul {
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: repeat(4, 1fr);
-  row-gap: 2rem;
-  column-gap: 1rem;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 32px;
+  column-gap: 16px;
   margin-bottom: 20px;
   margin-top: 20px;
 }
