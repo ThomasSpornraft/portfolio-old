@@ -14,7 +14,6 @@
     <div class="description">
       <p>
         {{ item.Beschreibung }}
-        <i v-if="item.Abschluss" class="fas fa-graduation-cap"></i>
       </p>
     </div>
   </div>
@@ -74,7 +73,7 @@ export default {
   display: flex;
   align-items: center;
   color: #aaa;
-  min-height: 100px;
+  min-height: 90px;
   margin-bottom: 30px;
   width: 100%;
   position: relative;

@@ -7,25 +7,29 @@
           alt=""
         />
         <div class="home__content-contact-profiletext">
-          <p class="title">Thomas Spornraft</p>
+          <h2><strong>THOMAS</strong> SPORNRAFT</h2>
           <p>
             <i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp; München, Germany
           </p>
         </div>
         <div class="home__content-contact-list">
-          <p>{{ showContact }}</p>
           <ul>
             <li>
-              <a
-                ><i @click="clickHandler('phone')" class="fas fa-phone"></i>
+              <a href="tel:+49015170809098"
+                ><i class="fas fa-phone"></i>
+                <p>0151-70809098</p>
               </a>
             </li>
             <li>
-              <a><i @click="clickHandler('email')" class="fas fa-at"></i> </a>
+              <a href="mailto:Thomas.Spornraft@web.de"
+                ><i class="fas fa-at"></i>
+                <p>Thomas.Spornraft@web.de</p>
+              </a>
             </li>
             <li>
               <a href="https://github.com/ThomasSpornraft" target="_blank"
                 ><i class="fab fa-github"></i>
+                <p>GitHub</p>
               </a>
             </li>
             <li>
@@ -33,6 +37,7 @@
                 href="https://discordapp.com/users/390962526466080768"
                 target="_blank"
                 ><i class="fab fa-discord"></i>
+                <p>Discord</p>
               </a>
             </li>
             <li>
@@ -40,11 +45,13 @@
                 href="https://www.linkedin.com/in/thomas-spornraft-5974b71b7/"
                 target="_blank"
                 ><i class="fab fa-linkedin-in"></i>
+                <p>Linked in</p>
               </a>
             </li>
             <li>
               <a href="https://twitter.com/TSpornraft" target="_blank"
                 ><i class="fab fa-twitter"></i>
+                <p>Twitter</p>
               </a>
             </li>
             <li>
@@ -52,6 +59,7 @@
                 href="https://www.facebook.com/thomas.spornraft"
                 target="_blank"
                 ><i class="fab fa-facebook"></i>
+                <p>Facebook</p>
               </a>
             </li>
             <li>
@@ -59,6 +67,7 @@
                 href="https://www.instagram.com/thomasspornraft/?hl=de"
                 target="_blank"
                 ><i class="fab fa-instagram"></i>
+                <p>Instagram</p>
               </a>
             </li>
           </ul>
@@ -109,44 +118,29 @@
       </div>
     </div>
   </div>
-  <Impressum></Impressum>
 </template>
 
 
 
 <script>
 // @ is an alias to /src
-import Impressum from "../components/Impressum.vue";
+
 export default {
   name: "Home",
-  data() {
-    return {
-      showContact: "-",
-    };
-  },
-  components: { Impressum },
-  methods: {
-    clickHandler(option) {
-      if (option == "phone") {
-        this.showContact = "+49-151-70809098";
-      } else if (option == "email") {
-        this.showContact = "Thomas.Spornraft@web.de";
-      }
-    },
-  },
+  components: {},
 };
 </script>
 
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
 .home {
   display: flex;
   justify-content: center;
   margin-top: 100px !important;
   width: 70%;
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 * {
   margin: 0;
@@ -163,7 +157,7 @@ body {
   height: 100vh;
   background-color: #122;
   gap: 20px;
-  font-family: "Ubuntu";
+  font-family: "Montserrat";
 }
 
 .home__content {
@@ -186,7 +180,6 @@ body {
 
 .home__content-contact img {
   border: 5px solid lightseagreen;
-  padding: 5px;
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -199,42 +192,25 @@ body {
 
 .home__content-contact-profiletext {
   text-align: center;
-
+  color: lightseagreen;
   margin: 20px 0;
 }
 
-.home__content-contact-profiletext .title {
-  color: lightpink;
-  font-family: "Monoton";
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-
-.home__content-contact-list ul {
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: repeat(4, 1fr);
-  row-gap: 2rem;
-  column-gap: 1rem;
+.home__content-contact-list {
   margin-bottom: 20px;
-  margin-top: 20px;
 }
 
 .home__content-contact-list li {
   list-style: none;
-}
-
-.home__content-contact-list ul li i {
-  font-size: 32px;
-
-  cursor: pointer;
-
-  padding: 7px;
+  margin: 4px 0px;
 }
 
 .home__content-contact-list a {
+  display: flex;
   align-items: center;
-  color: #abc;
+  padding-left: 30px;
+  color: #aaa;
+  gap: 12px;
   text-decoration: none;
 }
 
