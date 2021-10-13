@@ -185,7 +185,7 @@ body {
 }
 
 .home__content-contact img {
-  margin-top: 10px;
+  margin-top: 15px;
   border: 5px solid lightseagreen;
   padding: 5px;
   width: 200px;
@@ -233,7 +233,7 @@ body {
 
 .home__content-contact-list a {
   align-items: center;
-  padding: 0px;
+  padding: 0px !important;
   color: #abc;
   text-decoration: none;
 }
