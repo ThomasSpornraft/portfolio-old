@@ -211,9 +211,10 @@ body {
 }
 
 .home__content-contact-list ul {
-  display: grid;
-  grid-template-rows: 40px 40px;
-  grid-template-columns: 30px 30px 30px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 
   margin-bottom: 20px;
   margin-top: 20px;
