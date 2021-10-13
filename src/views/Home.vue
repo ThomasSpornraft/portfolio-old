@@ -212,8 +212,8 @@ body {
 
 .home__content-contact-list ul {
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 40px 40px;
+  grid-template-columns: 30px 30px 30px 30px;
 
   margin-bottom: 20px;
   margin-top: 20px;
