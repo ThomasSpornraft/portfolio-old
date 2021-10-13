@@ -233,6 +233,7 @@ body {
 
 .home__content-contact-list a {
   align-items: center;
+  padding: 0px;
   color: #abc;
   text-decoration: none;
 }
