@@ -1,10 +1,6 @@
 <template>
   <div class="ausbildung">
-    <p class="ausbildung__text">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
-      perferendis iure commodi similique illum eum dolores aperiam ipsam
-      perspiciatis id!
-    </p>
+    <p class="ausbildung__text">verdammt lang her 😂🦕</p>
     <div class="ausbildung__content">
       <div class="ausbildung__timeline"></div>
       <div class="ausbildung__card">

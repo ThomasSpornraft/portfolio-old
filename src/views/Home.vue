@@ -33,7 +33,9 @@
               </a>
             </li>
             <li>
-              <a href="https://github.com/ThomasSpornraft" target="_blank"
+              <a
+                href="https://discordapp.com/users/390962526466080768"
+                target="_blank"
                 ><i class="fab fa-discord"></i>
                 <p>Discord</p>
               </a>
@@ -164,25 +166,29 @@ body {
 .home__content-contact {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: space-evenly;
   height: 640px;
-  width: 360px;
+  width: 300px;
   border-radius: 10px;
   box-shadow: -2px -2px 12px rgba(0, 0, 0, 0.4), 2px 4px 2px rgba(0, 0, 0, 0.4);
 }
 
 .home__content-contact img {
-  border-radius: 10px 10px 0 0;
-  filter: opacity(60%);
+  border: 5px solid lightseagreen;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
 }
 
 .home__content-contact img:hover {
-  filter: opacity(100%);
+  box-shadow: -2px -2px 12px rgba(32, 178, 170, 0.4),
+    2px 4px 2px rgba(32, 178, 170, 0.4);
 }
 
 .home__content-contact-profiletext {
   text-align: center;
-  color: cadetblue;
+  color: lightseagreen;
   margin: 20px 0;
 }
 
@@ -202,6 +208,10 @@ body {
   color: #aaa;
   gap: 12px;
   text-decoration: none;
+}
+
+.home__content-contact-list a:hover {
+  color: lightseagreen;
 }
 
 .home__content-main {

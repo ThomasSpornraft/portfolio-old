@@ -5,9 +5,7 @@
         <img src="../assets/profil.png" alt="" />
       </div>
       <div class="header__logo-name">
-        <p>Thomas</p>
-        <p>Spornraft</p>
-        <p>age: 39 | male</p>
+        <h2>Thomas</h2>
       </div>
     </div>
     <div class="header__navbar-mobile">
@@ -49,9 +47,9 @@ export default {};
 }
 
 .header__logo-img img {
-  border: 4px solid rebeccapurple;
-  width: 4rem;
-  height: 4rem;
+  border: 3px solid lightseagreen;
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
 }
 
