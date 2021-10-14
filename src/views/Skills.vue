@@ -17,6 +17,7 @@ export default {
 <style scoped>
 .skills {
   display: flex;
+
   flex-direction: column;
   width: 70%;
   margin-top: 120px;

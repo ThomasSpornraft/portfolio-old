@@ -113,10 +113,10 @@ export default {
           id: 3,
           title: "JavaScript",
           scores: {
-            Total: 75,
-            VUE: 80,
-            React: 60,
-            Angular: 60,
+            Total: 70,
+            VUE: 70,
+            React: 45,
+            Angular: 30,
             fetch: 50,
             axios: 30,
             nodeJs: 15,
@@ -183,6 +183,17 @@ export default {
           description: "python",
           descriptionDetails:
             "Python ist eine universelle, üblicherweise interpretierte, höhere Programmiersprache. Sie hat den Anspruch, einen gut lesbaren, knappen Programmierstil zu fördern. So werden beispielsweise Blöcke nicht durch geschweifte Klammern, sondern durch Einrückungen strukturiert.",
+        },
+        {
+          id: 7,
+          title: "PostgreSQl",
+          scores: {
+            Total: 65,
+          },
+          img_url: "assets/img/Postgresql.svg",
+          img_alt: "PostgreSQL Logo",
+          description: "PostgreSQL",
+          descriptionDetails: "",
         },
       ],
     };

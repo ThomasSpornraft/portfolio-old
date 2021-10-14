@@ -46,6 +46,8 @@ export default {
   font-family: "Ubuntu", sans-serif;
   text-align: center;
   color: whitesmoke;
+  overflow-y: visible;
+  overflow-x: hidden;
   width: 100vw;
   min-height: 100vh;
   /* background-color: #333; */

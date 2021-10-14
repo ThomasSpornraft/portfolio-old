@@ -33,7 +33,7 @@ export default {};
 
 <style scoped>
 .header {
-  padding: 10px 10px 0px;
+  padding: 5px 10px;
   background-color: black;
   display: flex;
   justify-content: space-between;
