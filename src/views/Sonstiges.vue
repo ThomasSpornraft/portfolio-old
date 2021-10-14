@@ -61,7 +61,7 @@
   height: 300px;
   border-radius: 50%;
   border: 6px solid black;
-  background-image: url("https://mycyberpunk.de/wp-content/uploads/2020/02/Cyberpunk-2077-Wallpaper-1.jpg");
+  background-image: url("../assets/img/cyberp.jpg");
   background-position-y: 30px;
   background-position-x: 15px;
   color: transparent;
