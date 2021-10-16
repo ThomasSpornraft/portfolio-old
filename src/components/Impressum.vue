@@ -75,10 +75,21 @@
       <p>
         Quelle: <a href="https://www.e-recht24.de">https://www.e-recht24.de</a>
       </p>
-      <i class="far fa-times-circle"></i>
+      <i @click="closeImpressum" class="far fa-times-circle"></i>
     </div>
   </div>
 </template>
+
+
+<script>
+export default {
+  methods: {
+    closeImpressum() {
+      document.getElementById("impressum").style.display = "none";
+    },
+  },
+};
+</script>
 
 <style scoped>
 #impressum {

@@ -103,7 +103,7 @@
             <img src="https://vuejs.org/images/logo.svg" alt="" />
           </p>
           <p>
-            <a href="#" target="_blank" rel="noopener noreferrer">Impressum</a>
+            <a @click="openImpressum">Impressum</a>
           </p>
         </div>
       </div>
@@ -133,6 +133,9 @@ export default {
         this.showContact = "Thomas.Spornraft@web.de";
       }
     },
+    openImpressum() {
+      document.getElementById("impressum").style.display = "flex";
+    },
   },
 };
 </script>
@@ -161,7 +164,7 @@ body {
   align-items: center;
   width: 100vw;
   height: 100vh;
-  background-color: #122;
+  background-color: var(--bg-color-secondary);
   gap: 20px;
   font-family: "Ubuntu";
 }
@@ -180,13 +183,13 @@ body {
   width: 300px;
   border-radius: 10px;
   background-color: rgba(12, 12, 12, 0.7);
-  border: 1px solid lightseagreen;
+  border: 1px solid var(--accent-color-primary);
   box-shadow: -2px -2px 12px rgba(0, 0, 0, 0.4), 2px 4px 2px rgba(0, 0, 0, 0.4);
 }
 
 .home__content-contact img {
   margin-top: 15px;
-  border: 5px solid lightseagreen;
+  border: 5px solid var(--accent-color-primary);
   padding: 5px;
   width: 200px;
   height: 200px;
@@ -205,7 +208,7 @@ body {
 }
 
 .home__content-contact-profiletext .title {
-  color: lightpink;
+  color: var(--accent-color-secondary);
   font-family: "Monoton";
   font-size: 2.5rem;
   margin-bottom: 10px;
@@ -239,7 +242,7 @@ body {
 }
 
 .home__content-contact-list a:hover {
-  color: lightseagreen;
+  color: var(--accent-color-primary);
 }
 
 .home__content-main {
@@ -253,7 +256,7 @@ body {
   text-align: center;
   padding: 20px 30px;
   background-color: rgba(12, 12, 12, 0.7);
-  border: 1px solid lightseagreen;
+  border: 1px solid var(--accent-color-primary);
 }
 
 .home__content-main h1 {

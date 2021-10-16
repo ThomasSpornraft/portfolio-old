@@ -1,5 +1,5 @@
 <template>
-  <Header></Header>
+  <Header @themeToggler="toggleTheme"></Header>
   <router-view />
   <vue-particles
     class="particles-class"
@@ -27,6 +27,28 @@ import Header from "./components/Header.vue";
 
 export default {
   components: { Header },
+  methods: {
+    toggleTheme(checked) {
+      if (!checked) {
+        let dark = document.documentElement;
+        dark.style.setProperty("--bg-color-primary", "rgba(0, 0, 0, .7)");
+        dark.style.setProperty("--bg-color-secondary", "#122");
+        dark.style.setProperty("--accent-color-primary", "#20b2aa");
+        dark.style.setProperty("--accent-color-secondary", "#ffb6c1");
+        console.log("dark", dark);
+      } else if (checked) {
+        let light = document.documentElement;
+        light.style.setProperty(
+          "--bg-color-primary",
+          "rgba(255, 255, 255, .7)"
+        );
+        light.style.setProperty("--bg-color-secondary", "#777");
+        console.log("light", light);
+        light.style.setProperty("--accent-color-primary", "#ffb6c1");
+        light.style.setProperty("--accent-color-secondary", "#20b2aa");
+      }
+    },
+  },
 };
 </script>
 
@@ -35,6 +57,13 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 
 /* imports END */
+
+:root {
+  --bg-color-primary: rgba(0, 0, 0, 0.7);
+  --bg-color-secondary: #122;
+  --accent-color-primary: #20b2aa;
+  --accent-color-secondary: #ffb6c1;
+}
 
 * {
   padding: 0;
@@ -50,7 +79,6 @@ export default {
   overflow-x: hidden;
   width: 100vw;
   min-height: 100vh;
-  /* background-color: #333; */
 }
 
 #app > div {
@@ -63,5 +91,10 @@ export default {
   width: 100vw;
   top: 0;
   z-index: -100;
+}
+
+a {
+  text-decoration: underline;
+  cursor: pointer;
 }
 </style>
